@@ -12,7 +12,7 @@ def portfolio_cost(filename):
         headers
         for row in rows:
             try:
-                shares = float(row[1])
+                shares = int(row[1])
                 price = float(row[2])
                 total_cost = total_cost + (price * shares)
             except ValueError:
